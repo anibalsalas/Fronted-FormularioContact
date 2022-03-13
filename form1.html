@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Document</title>
+        <link rel="stylesheet" href="estilo.css">
+    </head>
+    <body>
+        <header>
+          
+        </header>
+        <main>
+            <section>
+                
+                <div class="box">
+                    
+                    <!-- form: sirve como envoltura para los elementos input-->
+                    <form class="formulario">
+                        <h1>Inscribirse</h1>
+                        <div class="registro">
+                            <label for="nombres">Nombres:</label><br>
+                            <input 
+                                type="text" 
+                                placeholder="Ingresa tus nombres" 
+                                id="nombres"
+                                required
+                                minlength="6"
+                            >
+                        </div>
+                        <br>
+                        <div class="registro">
+                            <label for="apellidos">Apellidos: </label><br>
+                            <!-- regex, patrones regulares -->
+                            <input 
+                                type="text" 
+                                placeholder="Ingresa tus apellidos" 
+                                id="nombres"
+                                required
+                                minlength="6"
+                            >
+                        </div>
+                        <br>
+                        <div class="registro">
+                            <label for="edad">
+                                Edad:
+                            </label><br>
+                            <input 
+                                type="number"
+                                placeholder="Ingresa tu edad"
+                                id="edad"
+                                max="120">
+                        </div>
+                        <br>
+
+                        <div class="registro">
+                            <label for="mensaje">
+                                Escribenos un mensaje:
+                            </label><br>
+                            <textarea   name="mensaje" rows="3" cols="30" minlength="6"></textarea><br/>
+                            <br>
+                        </div>
+                        <!--  -->
+                        <div class="registro">
+                            <label>Género</label>
+                         
+                            <div class="genero">
+                            <p><input type="radio" name="genero" value="M" id="masculino">
+                                Masculino</p>
+                         
+                            <p><input
+                                type="radio"
+                                name="genero"
+                                value="F"
+                            >Femenino</p>
+                            <p><input
+                                type="radio"
+                                name="genero"
+                                value="ND"
+                            >Otro</p>
+                            <!--  --></div>
+                        </div>
+
+                        <br>
+                        <div class="registro">
+                            <label>Plan</label>
+                            <br>
+                            <select>
+                                <option
+                                    selected
+                                    disabled
+                                >
+                                    Seleccionar Plan
+                                </option>
+                                <option value="AM">
+                                    Plan 1
+                                </option>
+                                <option value="AR">
+                                    Plan 2
+                                </option>
+                                <option value="AP">
+                                    Plan 3
+                                </option>
+                            
+                            </select>
+                        </div>
+                        <!--  -->
+                      
+                        <div class="registro">
+                           <br>
+                            <input 
+                                type="checkbox"
+                                value="musica"
+                            >Subscribirse
+                        </div>
+
+                        <!--  -->
+                   
+                        
+                        <!-- la acción de ejecutar una petición se llama submit, valida y envia datos -->
+                        <input type="submit"
+                        value="Enviar">
+                    </form>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
